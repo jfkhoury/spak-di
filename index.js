@@ -13,7 +13,7 @@ import DIBuilder from "./lib/DIBuilder";
 
 var SpecGroup = SpecRegistration; // Alias for semantics.
 
-export { SpecRegistry, SpecRegistration, SpecGroup, CondSpecs, SpecRef,
+export { DIBuilder, SpecRegistration, SpecGroup, CondSpecs, SpecRef,
          SpecFromFn, SpecFromClass, SpecFromValue,
          ConfigMod, SpecWithConfigMod,
-         ActionSpec, HooksSpec, RegistrySpec, DIBuilder };
+         ActionSpec, HooksSpec, RegistrySpec };

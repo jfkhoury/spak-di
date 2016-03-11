@@ -12,7 +12,7 @@ import SpecRef from "./lib/SpecRef";
 
 var SpecGroup = SpecRegistration; // Alias for semantics.
 
-export { SpecRegistration, SpecGroup, CondSpecs, SpecRef,
+export { SpecRegistry, SpecRegistration, SpecGroup, CondSpecs, SpecRef,
          SpecFromFn, SpecFromClass, SpecFromValue,
          ConfigMod, SpecWithConfigMod,
          ActionSpec, HooksSpec, RegistrySpec };

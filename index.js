@@ -9,10 +9,11 @@ import ActionSpec from "./lib/ActionSpec";
 import HooksSpec from "./lib/HooksSpec";
 import RegistrySpec from "./lib/RegistrySpec";
 import SpecRef from "./lib/SpecRef";
+import DIBuilder from "./lib/DIBuilder";
 
 var SpecGroup = SpecRegistration; // Alias for semantics.
 
 export { SpecRegistry, SpecRegistration, SpecGroup, CondSpecs, SpecRef,
          SpecFromFn, SpecFromClass, SpecFromValue,
          ConfigMod, SpecWithConfigMod,
-         ActionSpec, HooksSpec, RegistrySpec };
+         ActionSpec, HooksSpec, RegistrySpec, DIBuilder };

@@ -1,10 +1,25 @@
-# spak-di
+# spåK-di
 DI for spåK :: Dependency Injection for Single Page Application Kit ::
 
-Implements the `SpakSpecsBuilder` with `DIBuilder`.
+Package that takes specification registrations defined by `spak` components to creates objects. `spak-di` uses `wirejs` under the hood.
 
-The `DIBuilder` uses `wirejs` under the hood providing an implementation that allows components to register via spec objects with the DI system.
+This package comes with `DIBuilder` (which implements `spak`s `SpecificationsBuilder` interface). 
 
-Once the `SpakBootstrapper` has asked all components to register it will ask `DIBuilder` to `build` an IocContainer object.
+## Update your `spak` app delegate to use `DIBuilder`
+import { DIBuilder } from `spak-di`;
 
-[See our docs](./doc/index.md) for how to register your components.
+App.run(
+    App.Components(...),
+    App.Config(...),
+    App.Delegate({
+        createSpecsBuilder() {
+            return new DIBuilder();
+        },
+        ... // whatever else you hook into.
+   }
+);
+```
+
+## Other Docs
+- (./doc/index.md) for how to register your components w/ specs.
+- (./doc/di-builder.md) DIBuilder.

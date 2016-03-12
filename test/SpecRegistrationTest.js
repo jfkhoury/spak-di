@@ -1,5 +1,5 @@
 import _ from "underscore";
-import Registry from "spak";
+import { Registry } from "spak";
 import { SpecRegistration, SpecRef, CondSpecs,
          SpecFromClass, SpecFromFn, SpecFromValue,
          ConfigMod, SpecWithConfigMod,

@@ -5,10 +5,10 @@
   "main": "index.js",
   "dependencies": {
     "q": "^1.4.1",
+    "spak": "^0.22.0",
     "underscore": "^1.7.0",
     "wire": "^0.10.11"
   },
-  "_spak": "SHOULD BE A DEP BUT ITS NOT IN NPM YET",
   "devDependencies": {
     "@yuzu/yep-eslint-config": "^1.0.3",
     "babel": "^5.6.14",
@@ -27,7 +27,12 @@
   "browserify": {
     "transform": [
       [
-        "babelify", { "optional": ["es7.decorators"] }
+        "babelify",
+        {
+          "optional": [
+            "es7.decorators"
+          ]
+        }
       ]
     ]
   },
